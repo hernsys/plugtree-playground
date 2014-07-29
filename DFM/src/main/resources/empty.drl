@@ -1,0 +1,23 @@
+package com.hernsys.rules
+
+#list any import classes here.
+
+#declare any global variables here
+
+
+dialect "mvel"
+
+rule "expense greater than 1000"
+    when
+        
+    then
+        System.out.println("The customer ");
+
+end
+
+rule "Customer registered"
+ 	when
+	  
+ 	then 
+  	  System.out.println("The customer ");
+end
