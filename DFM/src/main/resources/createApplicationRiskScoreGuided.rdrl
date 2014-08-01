@@ -1,0 +1,7 @@
+import java.lang.Number;
+
+rule "createApplicationRiskScoreGuided"
+	dialect "mvel"
+	when
+	then
+end
