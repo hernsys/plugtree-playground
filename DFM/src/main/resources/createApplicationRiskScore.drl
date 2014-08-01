@@ -1,0 +1,15 @@
+import com.decisionmanagementsolutions.model.Application;
+import com.decisionmanagementsolutions.model.PartialApplication;
+
+rule "Add up partials"
+salience -100
+when
+	$value: Number() from accumulate(
+		PartialApplication($partial: partialScore), 
+		count($partial)
+	)
+then
+	Application app = new Application();
+	app.setRiskScore($value.intValue());
+	insert(app);
+end
