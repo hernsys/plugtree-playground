@@ -4,6 +4,7 @@ import com.decisionmanagementsolutions.model.Application;
 import com.decisionmanagementsolutions.model.PartialApplication;
 
 rule "Add up partials"
+disabled true
 salience -100
 when
 	$value: Number() from accumulate(
