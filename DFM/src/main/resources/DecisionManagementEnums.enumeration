@@ -5,3 +5,4 @@
 'ApplicantData.maritalStatus' : ['S', 'M']
 'ApplicantData.employmentStatus' : ['UNEMPLOYED', 'EMPLOYED', 'SELF-EMPLOYED', 'STUDENT']
 'PostBureauData.riskCategory' : ['HIGH', 'MEDIUM', 'LOW', 'VERY LOW', 'DECLINE']
+'LogicContext.routing' : ['DECLINE', 'REFER', 'ACCEPT']
