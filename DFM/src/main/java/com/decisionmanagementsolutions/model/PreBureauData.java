@@ -18,9 +18,13 @@ public class PreBureauData implements java.io.Serializable
    @org.kie.api.definition.type.Position(0)
    private java.lang.String riskCategory;
 
-   @org.kie.api.definition.type.Label(value = "creditContingencyFactor")
-   @org.kie.api.definition.type.Position(value = 2)
+   @org.kie.api.definition.type.Label("creditContingencyFactor")
+   @org.kie.api.definition.type.Position(2)
    private java.lang.Double creditContingencyFactor;
+
+   @org.kie.api.definition.type.Label(value = "requiredMonthlyInstallment")
+   @org.kie.api.definition.type.Position(value = 3)
+   private java.lang.Double requiredMonthlyInstallment;
 
    public java.lang.Boolean getAffordability()
    {
@@ -53,17 +57,30 @@ public class PreBureauData implements java.io.Serializable
       this.creditContingencyFactor = creditContingencyFactor;
    }
 
+   public java.lang.Double getRequiredMonthlyInstallment()
+   {
+      return this.requiredMonthlyInstallment;
+   }
+
+   public void setRequiredMonthlyInstallment(
+         java.lang.Double requiredMonthlyInstallment)
+   {
+      this.requiredMonthlyInstallment = requiredMonthlyInstallment;
+   }
+
    public PreBureauData()
    {
    }
 
    public PreBureauData(java.lang.String riskCategory,
          java.lang.Boolean affordability,
-         java.lang.Double creditContingencyFactor)
+         java.lang.Double creditContingencyFactor,
+         java.lang.Double requiredMonthlyInstallment)
    {
       this.riskCategory = riskCategory;
       this.affordability = affordability;
       this.creditContingencyFactor = creditContingencyFactor;
+      this.requiredMonthlyInstallment = requiredMonthlyInstallment;
    }
 
 }
