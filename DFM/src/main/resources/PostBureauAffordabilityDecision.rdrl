@@ -7,7 +7,7 @@ rule "PostBureauAffordabilityDecision"
 	dialect "mvel"
 	when
 		ApplicantData( $income : monthlyIncome != null , $repayments : monthlyRepayments != null , $expenses : monthlyExpenses != null )
-		pbd : PreBureauData( $ccf : creditContingencyFactor != null )
+		pbd : PreBureauData( $ccf : creditContingencyFactor != null , affordability == null )
 	then
 		Double disposable = $income- ($repayments + $expenses);
 		modify (pbd) { setAffordability(disposable * $ccf > $rmi); }
