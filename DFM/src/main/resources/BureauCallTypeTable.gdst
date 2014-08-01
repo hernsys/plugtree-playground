@@ -10,7 +10,59 @@
   </descriptionCol>
   <metadataCols/>
   <attributeCols/>
-  <conditionPatterns/>
+  <conditionPatterns>
+    <Pattern52>
+      <factType>PreBureauData</factType>
+      <boundName>pb</boundName>
+      <isNegated>false</isNegated>
+      <conditions>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>Pre-Bureau Risk Category</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>riskCategory</factField>
+          <fieldType>String</fieldType>
+          <operator>==</operator>
+          <parameters/>
+        </condition-column52>
+      </conditions>
+      <window>
+        <parameters/>
+      </window>
+    </Pattern52>
+    <Pattern52>
+      <factType>BureauData</factType>
+      <boundName>bd</boundName>
+      <isNegated>false</isNegated>
+      <conditions>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>true</hideColumn>
+          <width>-1</width>
+          <header>get BureauData</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>this</factField>
+          <fieldType>this</fieldType>
+          <operator>!= null</operator>
+          <parameters/>
+        </condition-column52>
+      </conditions>
+      <window>
+        <operator></operator>
+        <parameters/>
+      </window>
+    </Pattern52>
+  </conditionPatterns>
   <actionCols/>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
@@ -46,6 +98,9 @@
       </org.drools.workbench.models.datamodel.imports.Import>
       <org.drools.workbench.models.datamodel.imports.Import>
         <type>com.decisionmanagementsolutions.model.BureauData</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>com.decisionmanagementsolutions.model.LogicContext</type>
       </org.drools.workbench.models.datamodel.imports.Import>
     </imports>
   </imports>
