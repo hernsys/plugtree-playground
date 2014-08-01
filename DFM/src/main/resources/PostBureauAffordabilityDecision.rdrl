@@ -1,7 +1,12 @@
 import java.lang.Number;
+import com.decisionmanagementsolutions.model.ApplicantData;
+import com.decisionmanagementsolutions.model.LogicContext;
+import com.decisionmanagementsolutions.model.PreBureauData;
 
 rule "PostBureauAffordabilityDecision"
 	dialect "mvel"
 	when
+		ApplicantData( $income : monthlyIncome, $repayments : monthlyRepayments, $expenses : monthlyExpenses)
+		PreBureauData( )
 	then
 end
