@@ -3,6 +3,7 @@ import com.decisionmanagementsolutions.model.Application;
 import java.lang.Double;
 
 rule "createApplicationRiskScoreGuided"
+	salience -100
 	dialect "mvel"
 	when
 		$value : Double( ) from accumulate ( PartialApplication( $partial : partialScore != null ),
