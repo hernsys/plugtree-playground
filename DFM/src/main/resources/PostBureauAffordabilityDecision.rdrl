@@ -6,9 +6,9 @@ import com.decisionmanagementsolutions.model.PreBureauData;
 rule "PostBureauAffordabilityDecision"
 	dialect "mvel"
 	when
-		ApplicantData( $income : monthlyIncome != null , $repayments : monthlyRepayments != null , $expenses : monthlyExpenses != null )
 		pbd : PreBureauData( $ccf : creditContingencyFactor != null , affordability == null , $rmi : requiredMonthlyInstallment != null )
+		ApplicantData( $inc : monthlyIncome != null , $repay : monthlyRepayments != null , $exp : monthlyExpenses != null )
 	then
-		Double disposable = $income- ($repayments + $expenses);
-		modify (pbd) { setAffordability(disposable * $ccf > $rmi); }
+		Double dispInc = $inc - ($repay + $exp);
+		modify (pbd) { setAffordability(dispInc * $ccf > $rmi); }
 end
