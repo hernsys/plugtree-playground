@@ -12,14 +12,14 @@ public class Application implements java.io.Serializable
 
    @org.kie.api.definition.type.Label(value = "riskScore")
    @org.kie.api.definition.type.Position(value = 0)
-   private java.lang.Double riskScore;
+   private java.lang.Integer riskScore;
 
-   public java.lang.Double getRiskScore()
+   public java.lang.Integer getRiskScore()
    {
       return this.riskScore;
    }
 
-   public void setRiskScore(java.lang.Double riskScore)
+   public void setRiskScore(java.lang.Integer riskScore)
    {
       this.riskScore = riskScore;
    }
@@ -28,7 +28,7 @@ public class Application implements java.io.Serializable
    {
    }
 
-   public Application(java.lang.Double riskScore)
+   public Application(java.lang.Integer riskScore)
    {
       this.riskScore = riskScore;
    }
