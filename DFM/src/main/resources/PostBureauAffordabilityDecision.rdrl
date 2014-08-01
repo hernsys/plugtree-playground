@@ -6,7 +6,7 @@ import com.decisionmanagementsolutions.model.PreBureauData;
 rule "PostBureauAffordabilityDecision"
 	dialect "mvel"
 	when
-		ApplicantData( $income : monthlyIncome, $repayments : monthlyRepayments, $expenses : monthlyExpenses)
-		PreBureauData( )
+		ApplicantData( $income : monthlyIncome != null , $repayments : monthlyRepayments != null , $expenses : monthlyExpenses != null )
+		PreBureauData( $ccf : creditContingencyFactor != null )
 	then
 end
