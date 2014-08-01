@@ -1,0 +1,2 @@
+'PreBureauData.riskCategory' : ['HIGH', 'MEDIUM', 'LOW', 'VERY LOW', 'DECLINE']
+'LogicContext.bureauCallType' : ['FULL', 'MINI', 'NONE']
