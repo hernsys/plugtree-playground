@@ -4,8 +4,8 @@
   <baselineScore>0.0</baselineScore>
   <initialScore>0.0</initialScore>
   <useReasonCodes>false</useReasonCodes>
-  <factName>ApplicantData</factName>
-  <fieldName>monthlyExpenses</fieldName>
+  <factName>Application</factName>
+  <fieldName></fieldName>
   <reasonCodeField></reasonCodeField>
   <characteristics>
     <org.drools.workbench.models.guided.scorecard.shared.Characteristic>
