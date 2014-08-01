@@ -1,14 +1,22 @@
 <org.drools.workbench.models.guided.scorecard.shared.ScoreCardModel>
   <name>ApplicationRiskScoreCard</name>
+  <reasonCodesAlgorithm>none</reasonCodesAlgorithm>
   <baselineScore>0.0</baselineScore>
   <initialScore>0.0</initialScore>
   <useReasonCodes>false</useReasonCodes>
-  <factName></factName>
-  <fieldName></fieldName>
+  <factName>ApplicantData</factName>
+  <fieldName>monthlyExpenses</fieldName>
   <reasonCodeField></reasonCodeField>
   <characteristics/>
   <packageName></packageName>
   <imports>
-    <imports/>
+    <imports>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>com.decisionmanagementsolutions.model.ApplicantData</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>com.decisionmanagementsolutions.model.Application</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+    </imports>
   </imports>
 </org.drools.workbench.models.guided.scorecard.shared.ScoreCardModel>
