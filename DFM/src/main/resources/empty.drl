@@ -1,8 +1,8 @@
 package com.hernsys.rules
 
-#list any import classes here.
+//list any import classes here.
 
-#declare any global variables here
+//declare any global variables here
 
 
 dialect "mvel"
