@@ -1,3 +1,4 @@
 'PreBureauData.riskCategory' : ['HIGH', 'MEDIUM', 'LOW', 'VERY LOW', 'DECLINE']
 'LogicContext.bureauCallType' : ['FULL', 'MINI', 'NONE']
 'LogicContext.eligibility' : ['ELIGIBLE', 'INELIGIBLE']
+'LogicContext.strategy' : ['DECLINE', 'BUREAU', 'THROUGH']
