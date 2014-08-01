@@ -5,10 +5,10 @@ import java.lang.Double;
 rule "createApplicationRiskScoreGuided"
 	dialect "mvel"
 	when
-		$value : Double( ) from accumulate ( PartialApplication( $partial : partialScore),
+		$value : Double( ) from accumulate ( PartialApplication( $partial : partialScore != null ),
 			count($partial)) 
 	then
-		Application fact0 = new Application();
-		fact0.setRiskScore( $value.intValue() );
-		insert( fact0 );
+		Application app = new Application();
+		app.setRiskScore( $value.intValue() );
+		insert( app );
 end
