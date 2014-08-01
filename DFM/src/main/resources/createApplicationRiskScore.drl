@@ -1,3 +1,5 @@
+package org.jbpm;
+
 import com.decisionmanagementsolutions.model.Application;
 import com.decisionmanagementsolutions.model.PartialApplication;
 
