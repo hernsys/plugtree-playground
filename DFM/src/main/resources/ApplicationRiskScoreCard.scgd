@@ -4,10 +4,107 @@
   <baselineScore>0.0</baselineScore>
   <initialScore>0.0</initialScore>
   <useReasonCodes>false</useReasonCodes>
-  <factName>ApplicantData</factName>
-  <fieldName>monthlyExpenses</fieldName>
+  <factName>Application</factName>
+  <fieldName>riskScore</fieldName>
   <reasonCodeField></reasonCodeField>
-  <characteristics/>
+  <characteristics>
+    <org.drools.workbench.models.guided.scorecard.shared.Characteristic>
+      <fact>ApplicantData</fact>
+      <field>age</field>
+      <baselineScore>0.0</baselineScore>
+      <reasonCode></reasonCode>
+      <attributes>
+        <org.drools.workbench.models.guided.scorecard.shared.Attribute>
+          <value>50</value>
+          <partialScore>48.0</partialScore>
+          <reasonCode></reasonCode>
+          <operator>&gt;=</operator>
+        </org.drools.workbench.models.guided.scorecard.shared.Attribute>
+        <org.drools.workbench.models.guided.scorecard.shared.Attribute>
+          <value>18..21</value>
+          <partialScore>32.0</partialScore>
+          <reasonCode></reasonCode>
+          <operator>&gt;=..&lt;=</operator>
+        </org.drools.workbench.models.guided.scorecard.shared.Attribute>
+        <org.drools.workbench.models.guided.scorecard.shared.Attribute>
+          <value>22..25</value>
+          <partialScore>35.0</partialScore>
+          <reasonCode></reasonCode>
+          <operator>&gt;=..&lt;=</operator>
+        </org.drools.workbench.models.guided.scorecard.shared.Attribute>
+        <org.drools.workbench.models.guided.scorecard.shared.Attribute>
+          <value>26..35</value>
+          <partialScore>40.0</partialScore>
+          <reasonCode></reasonCode>
+          <operator>&gt;=..&lt;=</operator>
+        </org.drools.workbench.models.guided.scorecard.shared.Attribute>
+        <org.drools.workbench.models.guided.scorecard.shared.Attribute>
+          <value>36..49</value>
+          <partialScore>43.0</partialScore>
+          <reasonCode></reasonCode>
+          <operator>&gt;=..&lt;=</operator>
+        </org.drools.workbench.models.guided.scorecard.shared.Attribute>
+      </attributes>
+      <name>Age &gt;=</name>
+      <dataType>int</dataType>
+    </org.drools.workbench.models.guided.scorecard.shared.Characteristic>
+    <org.drools.workbench.models.guided.scorecard.shared.Characteristic>
+      <fact>ApplicantData</fact>
+      <field>maritalStatus</field>
+      <baselineScore>0.0</baselineScore>
+      <reasonCode></reasonCode>
+      <attributes>
+        <org.drools.workbench.models.guided.scorecard.shared.Attribute>
+          <value>S</value>
+          <partialScore>25.0</partialScore>
+          <reasonCode></reasonCode>
+          <operator>=</operator>
+        </org.drools.workbench.models.guided.scorecard.shared.Attribute>
+        <org.drools.workbench.models.guided.scorecard.shared.Attribute>
+          <value>M</value>
+          <partialScore>45.0</partialScore>
+          <reasonCode></reasonCode>
+          <operator>=</operator>
+        </org.drools.workbench.models.guided.scorecard.shared.Attribute>
+      </attributes>
+      <name>Marital Status</name>
+      <dataType>String</dataType>
+    </org.drools.workbench.models.guided.scorecard.shared.Characteristic>
+    <org.drools.workbench.models.guided.scorecard.shared.Characteristic>
+      <fact>ApplicantData</fact>
+      <field>employmentStatus</field>
+      <baselineScore>0.0</baselineScore>
+      <reasonCode></reasonCode>
+      <attributes>
+        <org.drools.workbench.models.guided.scorecard.shared.Attribute>
+          <value>UNEMPLOYED</value>
+          <partialScore>15.0</partialScore>
+          <reasonCode></reasonCode>
+          <operator>=</operator>
+        </org.drools.workbench.models.guided.scorecard.shared.Attribute>
+        <org.drools.workbench.models.guided.scorecard.shared.Attribute>
+          <value>STUDENT</value>
+          <partialScore>18.0</partialScore>
+          <reasonCode></reasonCode>
+          <operator>=</operator>
+        </org.drools.workbench.models.guided.scorecard.shared.Attribute>
+        <org.drools.workbench.models.guided.scorecard.shared.Attribute>
+          <value>EMPLOYED</value>
+          <partialScore>45.0</partialScore>
+          <reasonCode></reasonCode>
+          <operator>=</operator>
+        </org.drools.workbench.models.guided.scorecard.shared.Attribute>
+        <org.drools.workbench.models.guided.scorecard.shared.Attribute>
+          <value>SELF-EMPLOYED</value>
+          <partialScore>36.0</partialScore>
+          <reasonCode></reasonCode>
+          <operator>=</operator>
+        </org.drools.workbench.models.guided.scorecard.shared.Attribute>
+      </attributes>
+      <name>Employment Status</name>
+      <dataType>String</dataType>
+    </org.drools.workbench.models.guided.scorecard.shared.Characteristic>
+  </characteristics>
   <packageName></packageName>
   <imports>
     <imports>
