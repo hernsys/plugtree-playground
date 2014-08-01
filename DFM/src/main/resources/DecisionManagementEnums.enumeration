@@ -2,3 +2,5 @@
 'LogicContext.bureauCallType' : ['FULL', 'MINI', 'NONE']
 'LogicContext.eligibility' : ['ELIGIBLE', 'INELIGIBLE']
 'LogicContext.strategy' : ['DECLINE', 'BUREAU', 'THROUGH']
+'ApplicantData.maritalStatus' : ['S', 'M']
+'ApplicantData.employmentStatus' : ['UNEMPLOYED', 'EMPLOYED', 'SELF-EMPLOYED', 'STUDENT']
